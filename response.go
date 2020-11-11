@@ -6,6 +6,7 @@ type Response interface {
 	GetMessage() string
 	GetCode() string
 	GetBody() ([]byte, error)
+	GetData() interface{}
 }
 
 // Meta object

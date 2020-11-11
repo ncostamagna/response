@@ -34,3 +34,7 @@ func (s *successResponse) GetCode() string {
 func (s *successResponse) GetBody() ([]byte, error) {
 	return json.Marshal(s)
 }
+
+func (s *successResponse) GetData() interface{} {
+	return s.Data
+}

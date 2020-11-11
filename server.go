@@ -34,3 +34,7 @@ func (s *serverErrorResponse) GetCode() string {
 func (s *serverErrorResponse) GetBody() ([]byte, error) {
 	return nil, errors.New("Server Error does not body")
 }
+
+func (s *serverErrorResponse) GetData() interface{} {
+	return nil
+}
